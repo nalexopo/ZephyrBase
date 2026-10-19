@@ -1,0 +1,6 @@
+board:
+  name: pynqz2
+  full_name: Pynqz2
+  vendor: TuL
+  socs:
+  - name: xc7z020
