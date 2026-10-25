@@ -1,4 +1,4 @@
-# Copyright (c) 2022 Henrik Brix Andersen <henrik@brixandersen.dk>
+# Copyright (c) 2026 nalexopo
 # SPDX-License-Identifier: Apache-2.0
 
 board_runner_args(openocd "--file-type=elf" "--cmd-reset-halt" "halt")

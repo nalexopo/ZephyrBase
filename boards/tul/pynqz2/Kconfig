@@ -1,5 +1,5 @@
-# Copyright (c) 2024 Nordic Semiconductor ASA
+# Copyright (c) 2026 nalexopo
 # SPDX-License-Identifier: Apache-2.0
 
 config UART_XLNX_PS
-	select PINCTRL if BOARD_ZYBO
+	select PINCTRL if BOARD_PYNQZ2

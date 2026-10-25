@@ -4,6 +4,23 @@
 CONFIG_ARM_ARCH_TIMER=y
 CONFIG_SYS_CLOCK_HW_CYCLES_PER_SEC=325000000
 
+# Core hardware abstractions - disable the MMU to ensure 1:1 physical layout
+CONFIG_CACHE_MANAGEMENT=n
+
+# Strip out heavy peripheral subsystems that trigger register access crashes
+CONFIG_USB_DEVICE_STACK=n
+CONFIG_I2C=n
+CONFIG_SPI=n
+CONFIG_GPIO=y
+
+# Keep ONLY the essential serial line configuration
 CONFIG_SERIAL=y
 CONFIG_CONSOLE=y
 CONFIG_UART_CONSOLE=y
+CONFIG_PRINTK=y
+CONFIG_BOOT_BANNER=y
+
+# DISABLE asynchronous logging buffers to force characters out instantly
+CONFIG_LOG=n
+CONFIG_UART_INTERRUPT_DRIVEN=n
+CONFIG_UART_ASYNC_API=n

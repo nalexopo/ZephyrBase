@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022 Henrik Brix Andersen <henrik@brixandersen.dk>
+ * Copyright (c) 2026 nalexopo
  *
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -7,25 +7,25 @@
 #include <zephyr/dt-bindings/pinctrl/pinctrl-zynq.h>
 
 &pinctrl0 {
-	pinctrl_uart1_default: uart1-default {
+	pinctrl_uart0_default: uart0-default {
 		mux {
-			groups = "uart1_10_grp";
-			function = "uart1";
+			groups = "uart0_1_grp";
+			function = "uart0";
 		};
 
 		conf {
-			groups = "uart1_10_grp";
+			groups = "uart0_1_grp";
 			slew-rate = <IO_SPEED_SLOW>;
 			power-source = <IO_STANDARD_LVCMOS18>;
 		};
 
 		conf-rx {
-			pins = "MIO49";
+			pins = "MIO14";
 			bias-high-impedance;
 		};
 
 		conf-tx {
-			pins = "MIO48";
+			pins = "MIO15";
 			bias-disable;
 		};
 	};

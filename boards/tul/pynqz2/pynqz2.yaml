@@ -1,8 +1,8 @@
-# Copyright (c) 2022 Henrik Brix Andersen <henrik@brixandersen.dk>
+# Copyright (c) 2026 nalexopo 
 # SPDX-License-Identifier: Apache-2.0
 
-identifier: zybo
-name: Digilent Zybo
+identifier: pynqz2
+name: tuL pynqz2
 type: mcu
 arch: arm
 toolchain:
@@ -11,4 +11,4 @@ toolchain:
 ram: 524288
 supported:
   - gpio
-vendor: digilent
+vendor: tul
